@@ -1,7 +1,7 @@
 package models;
 
 public class Car {
-    private int carId;
+    private String carId;
     private String licenseNumber;
     private String make;
     private String model;
@@ -26,12 +26,12 @@ public class Car {
         this.type = type;
     }
 
-    public int getId() {
+    public String getCarId() {
         return carId;
     }
 
-    public void setId(int id) {
-        this.carId = id;
+    public void setCarId(String carId) {
+        this.carId = carId;
     }
 
     public String getLicenseNumber() {

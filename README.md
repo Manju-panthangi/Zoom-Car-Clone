@@ -35,7 +35,7 @@ A car rental system similar to Zoomcar for the renting of cars for a short perio
 > POST - "Zoomcar-Clone/return"
 - Admin
 
-Has all the access of user.
+Has all the access of userDetails.
 > Add/Remove/Edit vehicle
 > 
 > POST - "Zoomcar-Clone/Admin/Add"

@@ -1,6 +1,6 @@
 package models;
 
-public class User {
+public class UserDetails {
     private String name;
     private String emailId;
     private String phone;

@@ -2,7 +2,7 @@ package models;
 
 public class Account {
     private int accountId;
-    private User user;
+    private UserDetails userDetails;
     private AccountStatus status;
     private AccountType type;
 
@@ -23,12 +23,12 @@ public class Account {
         this.accountId = accountId;
     }
 
-    public User getUser() {
-        return user;
+    public UserDetails getUser() {
+        return userDetails;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUser(UserDetails userDetails) {
+        this.userDetails = userDetails;
     }
 
     public AccountStatus getStatus() {
