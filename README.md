@@ -11,20 +11,31 @@ A car rental system similar to Zoomcar for the renting of cars for a short perio
 - Members should be able to cancel their reservations.
 - The system should maintain a vehicle log to track all events related to the vehicles.
 
-### Usecases
+### Usecases and API Endpoints
 - User
-> Add/Remove/Edit vehicle: To add, remove or modify a vehicle.
-> 
+ 
 > Search catalog: To search for vehicles by type and availability.
+>
+> GET - "Zoomcar-Clone/search"
 > 
 > Register new account/Cancel membership: To add a new member or cancel an existing membership.
+>
+> POST - "Zoomcar-Clone/register"
 > 
 > Reserve vehicle: To reserve a vehicle.
-> 
+>
+> POST - "Zoomcar-Clone/reserve"
+>
 > Check-out vehicle: To rent a vehicle.
+>
+> POST - "Zoomcar-Clone/checkOut"
 > 
 > Return a vehicle: To return a vehicle.
+>
+> POST - "Zoomcar-Clone/return"
 - Admin
 
 Has all the access of user.
 > Add/Remove/Edit vehicle
+> 
+> POST - "Zoomcar-Clone/Admin/Add"
