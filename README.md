@@ -11,3 +11,20 @@ A car rental system similar to Zoomcar for the renting of cars for a short perio
 - Members should be able to cancel their reservations.
 - The system should maintain a vehicle log to track all events related to the vehicles.
 
+### Usecases
+- User
+> Add/Remove/Edit vehicle: To add, remove or modify a vehicle.
+> 
+> Search catalog: To search for vehicles by type and availability.
+> 
+> Register new account/Cancel membership: To add a new member or cancel an existing membership.
+> 
+> Reserve vehicle: To reserve a vehicle.
+> 
+> Check-out vehicle: To rent a vehicle.
+> 
+> Return a vehicle: To return a vehicle.
+- Admin
+
+Has all the access of user.
+> Add/Remove/Edit vehicle
