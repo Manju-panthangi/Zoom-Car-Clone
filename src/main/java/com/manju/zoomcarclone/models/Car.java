@@ -1,12 +1,21 @@
 package models;
 
-public class Vehicle {
+public class Car {
     private String id;
     private String licenseNumber;
     private String make;
     private String model;
+    private CarType type;
     private int yearOfManufacture;
-    private VehicleStatus status;
+    private CarStatus status;
+
+    public CarType getType() {
+        return type;
+    }
+
+    public void setType(CarType type) {
+        this.type = type;
+    }
 
     public String getId() {
         return id;
@@ -48,11 +57,11 @@ public class Vehicle {
         this.yearOfManufacture = yearOfManufacture;
     }
 
-    public VehicleStatus getStatus() {
+    public CarStatus getStatus() {
         return status;
     }
 
-    public void setStatus(VehicleStatus status) {
+    public void setStatus(CarStatus status) {
         this.status = status;
     }
 }

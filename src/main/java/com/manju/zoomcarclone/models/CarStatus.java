@@ -1,6 +1,6 @@
 package models;
 
-public enum VehicleStatus {
+public enum CarStatus {
     AVAILABLE,
     RESERVED,
     LOST,
