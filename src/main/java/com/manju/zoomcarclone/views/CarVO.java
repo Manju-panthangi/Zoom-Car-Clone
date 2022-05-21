@@ -1,38 +1,15 @@
-package com.manju.zoomcarclone.models;
+package com.manju.zoomcarclone.views;
 
-public class Car {
-    private String carId;
+import com.manju.zoomcarclone.models.CarType;
+import com.manju.zoomcarclone.models.ParkingStation;
+
+public class CarVO {
     private String registrationNumber;
     private String make;
     private String model;
     private CarType type;
     private int yearOfManufacture;
-    private CarStatus status;
     private ParkingStation station;
-
-    public ParkingStation getStation() {
-        return station;
-    }
-
-    public void setStation(ParkingStation station) {
-        this.station = station;
-    }
-
-    public CarType getType() {
-        return type;
-    }
-
-    public void setType(CarType type) {
-        this.type = type;
-    }
-
-    public String getCarId() {
-        return carId;
-    }
-
-    public void setCarId(String carId) {
-        this.carId = carId;
-    }
 
     public String getRegistrationNumber() {
         return registrationNumber;
@@ -58,6 +35,14 @@ public class Car {
         this.model = model;
     }
 
+    public CarType getType() {
+        return type;
+    }
+
+    public void setType(CarType type) {
+        this.type = type;
+    }
+
     public int getYearOfManufacture() {
         return yearOfManufacture;
     }
@@ -66,11 +51,11 @@ public class Car {
         this.yearOfManufacture = yearOfManufacture;
     }
 
-    public CarStatus getStatus() {
-        return status;
+    public ParkingStation getStation() {
+        return station;
     }
 
-    public void setStatus(CarStatus status) {
-        this.status = status;
+    public void setStation(ParkingStation station) {
+        this.station = station;
     }
 }
