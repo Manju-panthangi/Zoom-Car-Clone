@@ -1,4 +1,4 @@
-package models;
+package com.manju.zoomcarclone.models;
 
 public class Account {
     private int accountId;

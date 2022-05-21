@@ -1,4 +1,4 @@
-package models;
+package com.manju.zoomcarclone.models;
 
 import java.util.Date;
 
@@ -27,11 +27,11 @@ public class CarReservation {
         this.creationDate = creationDate;
     }
 
-    public models.ReservationStatus getReservationStatus() {
+    public ReservationStatus getReservationStatus() {
         return ReservationStatus;
     }
 
-    public void setReservationStatus(models.ReservationStatus reservationStatus) {
+    public void setReservationStatus(ReservationStatus reservationStatus) {
         ReservationStatus = reservationStatus;
     }
 

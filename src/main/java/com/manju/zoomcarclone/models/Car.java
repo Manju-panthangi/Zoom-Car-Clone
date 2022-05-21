@@ -1,4 +1,4 @@
-package models;
+package com.manju.zoomcarclone.models;
 
 public class Car {
     private String carId;
