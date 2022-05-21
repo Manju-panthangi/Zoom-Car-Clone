@@ -39,3 +39,7 @@ Has all the access of user.
 > Add/Remove/Edit vehicle
 > 
 > POST - "Zoomcar-Clone/Admin/Add"
+
+### Usecase Diagram
+
+<img src="Assets/zoomcarClone_UsecaseDiagram - Copy.png" width="650">
