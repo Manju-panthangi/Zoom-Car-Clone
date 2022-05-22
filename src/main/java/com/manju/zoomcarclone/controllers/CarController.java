@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/cars")
 public class CarController {
     @GetMapping("/list")
-    List<Car> getCarCatlog(){
+    List<Car> getCarCatalog(){
         return null;
     }
 
