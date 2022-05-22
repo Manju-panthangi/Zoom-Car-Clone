@@ -1,39 +1,15 @@
-package com.manju.zoomcarclone.models;
+package com.manju.zoomcarclone.views;
+
+import com.manju.zoomcarclone.models.ParkingStation;
+
 
 import java.util.Date;
 
-public class CarReservation {
-    private String reservationId;
-    private Date creationDate;
-    private ReservationStatus ReservationStatus;
+public class ReservationVO {
     private Date pickupDate;
     private Date returnDate;
     private ParkingStation pickupLocation;
     private ParkingStation returnLocation;
-
-    public String getReservationId() {
-        return reservationId;
-    }
-
-    public void setReservationId(String reservationId) {
-        this.reservationId = reservationId;
-    }
-
-    public Date getCreationDate() {
-        return creationDate;
-    }
-
-    public void setCreationDate(Date creationDate) {
-        this.creationDate = creationDate;
-    }
-
-    public ReservationStatus getReservationStatus() {
-        return ReservationStatus;
-    }
-
-    public void setReservationStatus(ReservationStatus reservationStatus) {
-        ReservationStatus = reservationStatus;
-    }
 
     public Date getPickupDate() {
         return pickupDate;
