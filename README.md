@@ -12,33 +12,26 @@ A car rental system similar to Zoomcar for the renting of cars for a short perio
 - The system should maintain a vehicle log to track all events related to the vehicles.
 
 ### Usecases and API Endpoints
-- User
- 
-> Search catalog: To search for vehicles by type and availability.
->
-> GET - "Zoomcar-Clone/search"
-> 
-> Register new account/Cancel membership: To add a new member or cancel an existing membership.
->
-> POST - "Zoomcar-Clone/register"
-> 
-> Reserve vehicle: To reserve a vehicle.
->
-> POST - "Zoomcar-Clone/reserve"
->
-> Check-out vehicle: To rent a vehicle.
->
-> POST - "Zoomcar-Clone/checkOut"
-> 
-> Return a vehicle: To return a vehicle.
->
-> POST - "Zoomcar-Clone/return"
-- Admin
 
-Has all the access of userDetails.
-> Add/Remove/Edit vehicle
-> 
-> POST - "Zoomcar-Clone/Admin/Add"
+GET - "/cars/list"
+
+GET -"/cars/{id}"
+
+POST - "/cars/add"
+
+PUT - "/cars/modify/{id}"
+
+DELETE - "/cars/delete/{id}"
+
+GET - "/reservation/{id}"
+
+POST - "/reservation/create/"
+
+PUT - "/reservation/modify/{id}"
+
+POST - "/reservation/cancel/{id}"
+
+POST - "/activity/pickUp"
 
 ### Usecase Diagram
 
