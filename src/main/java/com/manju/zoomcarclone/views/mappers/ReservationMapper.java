@@ -23,6 +23,7 @@ public class ReservationMapper {
         reservation.setPickupDate(pickUpDate);
         reservation.setReturnDate(returnDate);
 
+        reservation.setCarId(reservation.getCarId());
         reservation.setPickupLocation(reservationVo.getPickupLocation());
         reservation.setReturnLocation(reservationVo.getReturnLocation());
 
@@ -45,6 +46,7 @@ public class ReservationMapper {
 
         reservationVo.setPickupDate(pickUpDate);
         reservationVo.setReturnDate(returnDate);
+        reservationVo.setCarId(reservation.getCarId());
         reservationVo.setPickupLocation(reservation.getPickupLocation());
         reservationVo.setReturnLocation(reservation.getReturnLocation());
 

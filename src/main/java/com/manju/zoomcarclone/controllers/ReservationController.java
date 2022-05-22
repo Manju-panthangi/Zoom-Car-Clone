@@ -12,22 +12,22 @@ import java.util.List;
 public class ReservationController {
 
     @GetMapping("/{id}")
-    Reservation getReservationById(@PathVariable String id){
+    public Reservation getReservationById(@PathVariable String id){
         return null;
     }
 
     @PostMapping("/create")
-    void createReservation(@RequestBody ReservationVO reservation){
+    public void createReservation(@RequestBody ReservationVO reservation){
 
     }
 
     @PutMapping("modify/{id}")
-    void editReservation(@PathVariable String id,@RequestBody ReservationVO reservation){
+    public void editReservation(@PathVariable String id,@RequestBody ReservationVO reservation){
 
     }
 
     @PostMapping("cancel/{id}")
-    void cancelReservation(@PathVariable String id){
+    public void cancelReservation(@PathVariable String id){
 
     }
 

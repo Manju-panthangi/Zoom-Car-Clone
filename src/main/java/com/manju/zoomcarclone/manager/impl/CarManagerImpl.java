@@ -1,14 +1,20 @@
 package com.manju.zoomcarclone.manager.impl;
 
+import com.manju.zoomcarclone.dao.CarDAO;
 import com.manju.zoomcarclone.manager.CarManager;
 import com.manju.zoomcarclone.models.Car;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CarManagerImpl implements CarManager {
+    @Autowired
+    private CarDAO carDAO;
     @Override
     public void addCar(Car car) {
-
+        carDAO.addCar(car);
     }
 
     @Override
@@ -23,7 +29,7 @@ public class CarManagerImpl implements CarManager {
 
     @Override
     public List<Car> getCatalog() {
-        return null;
+        return carDAO.getCatalog();
     }
 
     @Override

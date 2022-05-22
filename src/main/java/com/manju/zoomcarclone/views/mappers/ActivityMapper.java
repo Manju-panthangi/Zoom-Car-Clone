@@ -1,6 +1,7 @@
 package com.manju.zoomcarclone.views.mappers;
 
 import com.manju.zoomcarclone.models.Activity;
+import com.manju.zoomcarclone.models.ActivityType;
 import com.manju.zoomcarclone.views.ActivityVO;
 
 import java.text.ParseException;
@@ -16,7 +17,7 @@ public class ActivityMapper {
         }
 
         activity.setReservationId(activityVo.getReservationId());
-        activity.setType(activityVo.getType());
+        activity.setType(ActivityType.valueOf(activityVo.getType()));
 
         SimpleDateFormat format = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
 
@@ -35,7 +36,7 @@ public class ActivityMapper {
         }
 
         activityVo.setReservationId(activity.getReservationId());
-        activityVo.setType(activity.getType());
+        activityVo.setType(activity.getType().toString());
 
         SimpleDateFormat formatter = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
 

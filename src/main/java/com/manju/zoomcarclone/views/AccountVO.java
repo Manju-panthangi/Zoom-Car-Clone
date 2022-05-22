@@ -8,7 +8,7 @@ public class AccountVO {
 
     private UserDetails userDetails;
     private AccountStatus status;
-    private AccountType type;
+    private String accountType;
 
     public UserDetails getUserDetails() {
         return userDetails;
@@ -26,11 +26,11 @@ public class AccountVO {
         this.status = status;
     }
 
-    public AccountType getType() {
-        return type;
+    public String getType() {
+        return accountType;
     }
 
-    public void setType(AccountType type) {
-        this.type = type;
+    public void setType(String type) {
+        this.accountType = type;
     }
 }

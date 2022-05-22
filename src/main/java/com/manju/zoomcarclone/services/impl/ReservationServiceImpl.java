@@ -2,7 +2,9 @@ package com.manju.zoomcarclone.services.impl;
 
 import com.manju.zoomcarclone.models.Reservation;
 import com.manju.zoomcarclone.services.ReservationService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ReservationServiceImpl implements ReservationService {
     @Override
     public void createReservation(Reservation reservation) {

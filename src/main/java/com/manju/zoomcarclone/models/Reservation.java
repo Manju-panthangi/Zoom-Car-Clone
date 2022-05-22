@@ -4,12 +4,21 @@ import java.util.Date;
 
 public class Reservation {
     private String reservationId;
+    private String carId;
     private Date creationDate;
     private ReservationStatus ReservationStatus;
     private Date pickupDate;
     private Date returnDate;
     private ParkingStation pickupLocation;
     private ParkingStation returnLocation;
+
+    public String getCarId() {
+        return carId;
+    }
+
+    public void setCarId(String carId) {
+        this.carId = carId;
+    }
 
     public String getReservationId() {
         return reservationId;

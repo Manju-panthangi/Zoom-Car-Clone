@@ -1,6 +1,7 @@
 package com.manju.zoomcarclone.views.mappers;
 
 import com.manju.zoomcarclone.models.Account;
+import com.manju.zoomcarclone.models.AccountType;
 import com.manju.zoomcarclone.views.AccountVO;
 
 
@@ -15,7 +16,7 @@ public class AccountMapper {
 
         account.setUser(accountVo.getUserDetails());
         account.setStatus(accountVo.getStatus());
-        account.setType(accountVo.getType());
+        account.setType(AccountType.valueOf(accountVo.getType()));
         return account;
     }
 
@@ -28,7 +29,7 @@ public class AccountMapper {
 
         accountVo.setUserDetails(account.getUser());
         accountVo.setStatus(account.getStatus());
-        accountVo.setType(account.getType());
+        accountVo.setType(account.getType().toString());
         return accountVo;
     }
 }

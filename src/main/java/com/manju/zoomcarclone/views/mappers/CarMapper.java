@@ -1,8 +1,12 @@
 package com.manju.zoomcarclone.views.mappers;
 
 import com.manju.zoomcarclone.models.Car;
+import com.manju.zoomcarclone.models.CarType;
+import com.manju.zoomcarclone.models.ParkingStation;
 import com.manju.zoomcarclone.views.CarVO;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CarMapper {
     public Car fromView(CarVO carVo){
         Car car = new Car();
@@ -13,9 +17,9 @@ public class CarMapper {
         car.setRegistrationNumber(carVo.getRegistrationNumber());
         car.setMake(carVo.getMake());
         car.setModel(carVo.getModel());
-        car.setType(carVo.getType());
+        car.setType(CarType.valueOf(carVo.getType()));
         car.setYearOfManufacture(carVo.getYearOfManufacture());
-        car.setStation(carVo.getStation());
+        car.setStation(ParkingStation.valueOf(carVo.getStation()));
 
         return car;
     }
@@ -28,10 +32,9 @@ public class CarMapper {
         carVo.setRegistrationNumber(car.getRegistrationNumber());
         carVo.setMake(car.getMake());
         carVo.setModel(car.getModel());
-        carVo.setType(car.getType());
-        carVo.setType(car.getType());
+        carVo.setType(car.getType().toString());
         carVo.setYearOfManufacture(car.getYearOfManufacture());
-        carVo.setStation(car.getStation());
+        carVo.setStation(car.getStation().toString());
 
         return carVo;
     }

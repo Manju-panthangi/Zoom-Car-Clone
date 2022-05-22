@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 public class ActivityController {
 
     @PostMapping("/pickUp")
-    void pickUpCar(@RequestBody ActivityVO activity){
+    public void pickUpCar(@RequestBody ActivityVO activity){
 
     }
 
     @PostMapping("/return")
-    void returnCar(@RequestBody ActivityVO activity){
+    public void returnCar(@RequestBody ActivityVO activity){
 
     }
 

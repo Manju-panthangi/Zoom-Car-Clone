@@ -7,9 +7,9 @@ public class CarVO {
     private String registrationNumber;
     private String make;
     private String model;
-    private CarType type;
+    private String carType;
     private int yearOfManufacture;
-    private ParkingStation station;
+    private String station;
 
     public String getRegistrationNumber() {
         return registrationNumber;
@@ -35,12 +35,12 @@ public class CarVO {
         this.model = model;
     }
 
-    public CarType getType() {
-        return type;
+    public String getType() {
+        return carType;
     }
 
-    public void setType(CarType type) {
-        this.type = type;
+    public void setType(String type) {
+        this.carType = type;
     }
 
     public int getYearOfManufacture() {
@@ -51,11 +51,11 @@ public class CarVO {
         this.yearOfManufacture = yearOfManufacture;
     }
 
-    public ParkingStation getStation() {
+    public String getStation() {
         return station;
     }
 
-    public void setStation(ParkingStation station) {
+    public void setStation(String station) {
         this.station = station;
     }
 }

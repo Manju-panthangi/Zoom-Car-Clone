@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class ActivityVO {
     private String reservationId;
-    private ActivityType type;
+    private String activityType;
     private String dateTimeStamp;
 
 
@@ -26,11 +26,11 @@ public class ActivityVO {
         this.reservationId = reservationId;
     }
 
-    public ActivityType getType() {
-        return type;
+    public String getType() {
+        return activityType;
     }
 
-    public void setType(ActivityType type) {
-        this.type = type;
+    public void setType(String type) {
+        this.activityType = type;
     }
 }

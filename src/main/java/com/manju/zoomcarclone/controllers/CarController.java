@@ -21,28 +21,28 @@ public class CarController {
 
 
     @GetMapping("/list")
-    List<Car> getCarCatalog(){
-        return null;
+    public List<Car> getCarCatalog(){
+        return carService.getCatalog();
     }
 
     @GetMapping("/{id}")
-    Car getCarById(@PathVariable String id){
+    public Car getCarById(@PathVariable String id){
         return null;
     }
 
     @PostMapping("/add")
-    void addCar(@RequestBody CarVO carVo){
+    public void addCar(@RequestBody CarVO carVo){
         Car car = carMapper.fromView(carVo);
         carService.addCar(car);
     }
 
     @PutMapping("/modify/{id}")
-    void modifyCar(@PathVariable String id,@RequestBody CarVO car){
+    public void modifyCar(@PathVariable String id,@RequestBody CarVO car){
 
     }
 
     @DeleteMapping("/delete/{id}")
-    void deleteCar(@PathVariable String id){
+    public void deleteCar(@PathVariable String id){
 
     }
 }
