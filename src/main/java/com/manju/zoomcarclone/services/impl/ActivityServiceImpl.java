@@ -6,7 +6,7 @@ import com.manju.zoomcarclone.services.ActivityService;
 public class ActivityServiceImpl implements ActivityService {
     @Override
     public void pickUpCar(Activity activity) {
-        
+
     }
 
     @Override

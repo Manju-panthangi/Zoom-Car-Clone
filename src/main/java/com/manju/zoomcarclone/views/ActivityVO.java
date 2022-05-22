@@ -9,6 +9,15 @@ public class ActivityVO {
     private ActivityType type;
     private String dateTimeStamp;
 
+
+    public String getDateTimeStamp() {
+        return dateTimeStamp;
+    }
+
+    public void setDateTimeStamp(String dateTimeStamp) {
+        this.dateTimeStamp = dateTimeStamp;
+    }
+
     public String getReservationId() {
         return reservationId;
     }
