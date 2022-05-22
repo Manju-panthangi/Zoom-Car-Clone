@@ -6,24 +6,24 @@ import com.manju.zoomcarclone.models.ParkingStation;
 import java.util.Date;
 
 public class ReservationVO {
-    private Date pickupDate;
-    private Date returnDate;
+    private String pickupDate;
+    private String returnDate;
     private ParkingStation pickupLocation;
     private ParkingStation returnLocation;
 
-    public Date getPickupDate() {
+    public String getPickupDate() {
         return pickupDate;
     }
 
-    public void setPickupDate(Date pickupDate) {
+    public void setPickupDate(String pickupDate) {
         this.pickupDate = pickupDate;
     }
 
-    public Date getReturnDate() {
+    public String getReturnDate() {
         return returnDate;
     }
 
-    public void setReturnDate(Date returnDate) {
+    public void setReturnDate(String returnDate) {
         this.returnDate = returnDate;
     }
 

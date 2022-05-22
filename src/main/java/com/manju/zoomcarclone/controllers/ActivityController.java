@@ -12,4 +12,9 @@ public class ActivityController {
 
     }
 
+    @PostMapping("/return")
+    void returnCar(@RequestBody ActivityVO activity){
+
+    }
+
 }

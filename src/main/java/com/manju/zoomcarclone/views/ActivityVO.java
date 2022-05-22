@@ -7,6 +7,7 @@ import java.util.Date;
 public class ActivityVO {
     private String reservationId;
     private ActivityType type;
+    private String dateTimeStamp;
 
     public String getReservationId() {
         return reservationId;

@@ -26,19 +26,9 @@ public class ReservationController {
 
     }
 
-    @PutMapping("cancel/{id}")
+    @PostMapping("cancel/{id}")
     void cancelReservation(@PathVariable String id){
 
     }
-/**
-    @PostMapping("/checkOut")
-    void checkOut(String id, @RequestBody ReservationVO reservation){
 
-    }
-
-    @PostMapping("/return")
-    void returnCar(){
-
-    }
-*/
 }
