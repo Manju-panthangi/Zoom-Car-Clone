@@ -8,30 +8,25 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/reservation")
 public class ReservationController {
-/**
-    @GetMapping()
-    List<CarVO> search(){
-        return null;
-    }
-*/
+
     @GetMapping("/{id}")
     Reservation getReservationById(@PathVariable String id){
         return null;
     }
 
-    @PostMapping("/reserve")
+    @PostMapping("/create")
     void createReservation(@RequestBody ReservationVO reservation){
 
     }
 
-    @PutMapping("/reserve/edit/{id}")
+    @PutMapping("modify/{id}")
     void editReservation(@PathVariable String id,@RequestBody ReservationVO reservation){
 
     }
 
-    @PutMapping("/reserve/cancel/{id}")
+    @PutMapping("cancel/{id}")
     void cancelReservation(@PathVariable String id){
 
     }
