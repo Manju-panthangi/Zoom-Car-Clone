@@ -1,12 +1,11 @@
-package com.manju.zoomcarclone.services.impl;
+package com.manju.zoomcarclone.manager.impl;
 
+import com.manju.zoomcarclone.manager.CarManager;
 import com.manju.zoomcarclone.models.Car;
-import com.manju.zoomcarclone.services.CarService;
-import org.springframework.context.annotation.Primary;
 
 import java.util.List;
 
-public class CarServiceImpl implements CarService {
+public class CarManagerImpl implements CarManager {
     @Override
     public void addCar(Car car) {
 

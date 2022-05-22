@@ -15,7 +15,7 @@ public class ReservationMapper {
             return null;
         }
 
-        SimpleDateFormat format = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
 
         Date pickUpDate = format.parse(reservationVo.getPickupDate());
         Date returnDate = format.parse(reservationVo.getReturnDate());
@@ -38,7 +38,7 @@ public class ReservationMapper {
             return null;
         }
 
-        SimpleDateFormat formatter = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
 
         String pickUpDate = formatter.format(reservation.getPickupDate());
         String returnDate = formatter.format(reservation.getReturnDate());
