@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 @Service
@@ -27,12 +28,12 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public void modifyCar(Car car) {
+    public void modifyCar(String id,Car car) {
 
     }
 
     @Override
-    public void deleteCar(Car car) {
+    public void deleteCar(String id,Car car) {
 
     }
 
@@ -42,7 +43,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public Car getCarById() {
+    public Car getCarById(String id) {
         return null;
     }
 }

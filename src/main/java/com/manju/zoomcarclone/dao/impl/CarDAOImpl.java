@@ -7,40 +7,47 @@ import com.manju.zoomcarclone.models.CarType;
 import com.manju.zoomcarclone.models.ParkingStation;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Repository
 public class CarDAOImpl implements CarDAO {
-    private ArrayList<Car> carCatalog;
+    private Map<String,Car> carIdVsCar;
     public CarDAOImpl(){
-        carCatalog = new ArrayList<>();
+        carIdVsCar = new HashMap<>();
         initCarData();
     }
 
     @Override
     public void addCar(Car car) {
-        carCatalog.add(car);
+        if(car != null) {
+            carIdVsCar.put(car.getCarId(), car);
+        }
     }
 
     @Override
-    public void modifyCar(Car car) {
-
+    public void modifyCar(String id,Car car) {
+        if(carIdVsCar.containsKey(id)){
+            carIdVsCar.put(id,car);
+        }
     }
 
     @Override
-    public void deleteCar(Car car) {
-
+    public void deleteCar(String id,Car car) {
+        if(carIdVsCar.containsKey(id)){
+            carIdVsCar.remove(id);
+        }
     }
 
     @Override
-    public List<Car> getCatalog() {
-        return this.carCatalog;
+    public Map<String,Car> getCatalog() {
+        return this.carIdVsCar;
     }
 
     @Override
-    public Car getCarById() {
+    public Car getCarById(String id) {
+        if(carIdVsCar.containsKey(id)){
+            return carIdVsCar.get(id);
+        }
         return null;
     }
 
@@ -55,6 +62,6 @@ public class CarDAOImpl implements CarDAO {
         car.setYearOfManufacture(2015);
         car.setStatus(CarStatus.AVAILABLE);
 
-        carCatalog.add(car);
+        carIdVsCar.put(car.getCarId(), car);
     }
 }
