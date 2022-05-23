@@ -47,4 +47,4 @@ I will be using Java and Spring Boot Framework to develop this application backe
 
 ### Future Enhancements
 This is an on-going project and I will be updating all the future enhancements to the
-Issues tab. Check [here](https://www.google.com) for this list of upcoming features.
+Issues tab. Check [here](https://github.com/Manju-panthangi/Zoom-Car-Clone/issues) for this list of upcoming features.
