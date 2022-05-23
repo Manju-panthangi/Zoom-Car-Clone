@@ -28,7 +28,7 @@ public class CarController {
 
     @GetMapping("/{id}")
     public Car getCarById(@PathVariable String id){
-        return null;
+        return carService.getCarById(id);
     }
 
     @PostMapping("/add")
@@ -38,12 +38,13 @@ public class CarController {
     }
 
     @PutMapping("/modify/{id}")
-    public void modifyCar(@PathVariable String id,@RequestBody CarVO car){
-
+    public void modifyCar(@PathVariable String id,@RequestBody CarVO carVo){
+        Car car = carMapper.fromView(carVo);
+        carService.modifyCar(id,car);
     }
 
     @DeleteMapping("/delete/{id}")
     public void deleteCar(@PathVariable String id){
-
+        carService.deleteCar(id);
     }
 }

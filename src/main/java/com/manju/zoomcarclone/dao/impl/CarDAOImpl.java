@@ -32,7 +32,7 @@ public class CarDAOImpl implements CarDAO {
     }
 
     @Override
-    public void deleteCar(String id,Car car) {
+    public void deleteCar(String id) {
         if(carIdVsCar.containsKey(id)){
             carIdVsCar.remove(id);
         }

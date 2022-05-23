@@ -22,12 +22,12 @@ public class CarManagerImpl implements CarManager {
 
     @Override
     public void modifyCar(String id,Car car) {
-
+        carDAO.modifyCar(id, car);
     }
 
     @Override
-    public void deleteCar(String id,Car car) {
-
+    public void deleteCar(String id) {
+        carDAO.deleteCar(id);
     }
 
     @Override
@@ -38,6 +38,6 @@ public class CarManagerImpl implements CarManager {
 
     @Override
     public Car getCarById(String id) {
-        return null;
+        return carDAO.getCarById(id);
     }
 }

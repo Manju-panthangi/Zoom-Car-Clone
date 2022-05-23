@@ -8,7 +8,7 @@ import java.util.Map;
 public interface CarDAO {
     public void addCar(Car car);
     public void modifyCar(String id,Car car);
-    public void deleteCar(String id,Car car);
+    public void deleteCar(String id);
     public Map<String,Car> getCatalog();
     public Car getCarById(String id);
 }

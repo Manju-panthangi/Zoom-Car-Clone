@@ -29,12 +29,12 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public void modifyCar(String id,Car car) {
-
+        carManager.modifyCar(id, car);
     }
 
     @Override
-    public void deleteCar(String id,Car car) {
-
+    public void deleteCar(String id) {
+        carManager.deleteCar(id);
     }
 
     @Override
@@ -44,6 +44,6 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public Car getCarById(String id) {
-        return null;
+        return carManager.getCarById(id);
     }
 }
