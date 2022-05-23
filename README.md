@@ -19,7 +19,7 @@ I will be using Java and Spring Boot Framework to develop this application backe
 
 ### Usecases and API Endpoints
 | API Method        | URI           | Usecase  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| :-----:|
 | GET      | "/cars/list" | List of Car inventory |
 | GET      | "/cars/{id}" | Get Car by carId |
 | POST    | "/cars/add"      |   Add new car to Inventory |
@@ -28,20 +28,22 @@ I will be using Java and Spring Boot Framework to develop this application backe
 | POST    | "/cars/add"      |   Add new car to Inventory |
 
 | API Method        | URI           | Usecase  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| :-----:|
 | POST    | "/reservation/create/"     |   Reserve a Car |
 | GET      | "/reservation/{id}" | Get Reservation details |
 | PUT    | "/reservation/modify/{id}"  |   Edit a Reservation |
 | POST      | "/reservation/cancel/{id}" | Cancel a Reservation |
 
 | API Method        | URI           | Usecase  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| :-----:|
 | POST    | "/activity/pickUp"    |  Check Out a Car |
 | POST    | "/activity/return"    |   Return a Car |
 
-### Usecase Diagram
+| API Method        | URI           | Usecase  |
+| ------------- |:-------------:| :-----:|
+| GET    | "/bill/{reservation-id}"    |  Get Bill for a specific reservation by Id |
+| GET    | "/bill/id"    |   Get Bill by billId |
 
-<img src="Assets/zoomcarClone_UsecaseDiagram - Copy.png" width="650">
 
 ### Future Enhancements
 This is an on-going project and I will be updating all the future enhancements to the
