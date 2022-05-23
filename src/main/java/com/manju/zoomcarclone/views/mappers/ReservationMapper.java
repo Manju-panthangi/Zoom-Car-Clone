@@ -2,11 +2,13 @@ package com.manju.zoomcarclone.views.mappers;
 
 import com.manju.zoomcarclone.models.Reservation;
 import com.manju.zoomcarclone.views.ReservationVO;
+import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Component
 public class ReservationMapper {
     public Reservation fromView(ReservationVO reservationVo) throws ParseException {
         Reservation reservation = new Reservation();
@@ -26,6 +28,7 @@ public class ReservationMapper {
         reservation.setCarId(reservation.getCarId());
         reservation.setPickupLocation(reservationVo.getPickupLocation());
         reservation.setReturnLocation(reservationVo.getReturnLocation());
+        reservation.setAccountId(reservationVo.getAccountId());
 
         return reservation;
 
@@ -49,6 +52,7 @@ public class ReservationMapper {
         reservationVo.setCarId(reservation.getCarId());
         reservationVo.setPickupLocation(reservation.getPickupLocation());
         reservationVo.setReturnLocation(reservation.getReturnLocation());
+        reservationVo.setAccountId(reservation.getAccountId());
 
         return reservationVo;
     }

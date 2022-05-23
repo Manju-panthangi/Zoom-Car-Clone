@@ -3,9 +3,10 @@ package com.manju.zoomcarclone.views.mappers;
 import com.manju.zoomcarclone.models.Account;
 import com.manju.zoomcarclone.models.AccountType;
 import com.manju.zoomcarclone.views.AccountVO;
+import org.springframework.stereotype.Component;
 
 
-
+@Component
 public class AccountMapper {
     public Account fromView(AccountVO accountVo){
         Account account = new Account();

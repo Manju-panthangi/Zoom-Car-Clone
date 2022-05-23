@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Reservation {
     private String reservationId;
+    private String accountId;
     private String carId;
     private Date creationDate;
     private ReservationStatus ReservationStatus;
@@ -11,6 +12,14 @@ public class Reservation {
     private Date returnDate;
     private ParkingStation pickupLocation;
     private ParkingStation returnLocation;
+
+    public String getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
+    }
 
     public String getCarId() {
         return carId;

@@ -3,11 +3,13 @@ package com.manju.zoomcarclone.views.mappers;
 import com.manju.zoomcarclone.models.Activity;
 import com.manju.zoomcarclone.models.ActivityType;
 import com.manju.zoomcarclone.views.ActivityVO;
+import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Component
 public class ActivityMapper {
     public Activity fromView(ActivityVO activityVo) throws ParseException {
         Activity activity = new Activity();
