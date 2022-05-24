@@ -6,9 +6,25 @@ import java.util.Date;
 
 public class ActivityVO {
     private String reservationId;
+    private String accountId;
     private String activityType;
     private String dateTimeStamp;
 
+    public String getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
+    }
+
+    public String getActivityType() {
+        return activityType;
+    }
+
+    public void setActivityType(String activityType) {
+        this.activityType = activityType;
+    }
 
     public String getDateTimeStamp() {
         return dateTimeStamp;

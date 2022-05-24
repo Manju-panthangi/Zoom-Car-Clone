@@ -5,8 +5,17 @@ import java.util.Date;
 public class Activity {
     private String activityId;
     private String reservationId;
+    private String accountId;
     private Date timeStamp;
     private ActivityType type;
+
+    public String getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
+    }
 
     public String getActivityId() {
         return activityId;

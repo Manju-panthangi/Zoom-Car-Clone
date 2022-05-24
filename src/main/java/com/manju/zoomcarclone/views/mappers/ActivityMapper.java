@@ -20,6 +20,7 @@ public class ActivityMapper {
 
         activity.setReservationId(activityVo.getReservationId());
         activity.setType(ActivityType.valueOf(activityVo.getType()));
+        activity.setAccountId(activityVo.getAccountId());
 
         SimpleDateFormat format = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
 
@@ -39,6 +40,7 @@ public class ActivityMapper {
 
         activityVo.setReservationId(activity.getReservationId());
         activityVo.setType(activity.getType().toString());
+        activityVo.setAccountId(activity.getAccountId());
 
         SimpleDateFormat formatter = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
 
