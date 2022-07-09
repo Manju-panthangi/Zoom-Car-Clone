@@ -7,7 +7,7 @@ import com.manju.zoomcarclone.models.UserDetails;
 public class AccountVO {
 
     private UserDetails userDetails;
-    private AccountStatus status;
+    private String status;
     private String accountType;
 
     public UserDetails getUserDetails() {
@@ -18,11 +18,11 @@ public class AccountVO {
         this.userDetails = userDetails;
     }
 
-    public AccountStatus getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(AccountStatus status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 

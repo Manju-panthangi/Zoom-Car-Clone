@@ -1,6 +1,7 @@
 package com.manju.zoomcarclone.views.mappers;
 
 import com.manju.zoomcarclone.models.Account;
+import com.manju.zoomcarclone.models.AccountStatus;
 import com.manju.zoomcarclone.models.AccountType;
 import com.manju.zoomcarclone.views.AccountVO;
 import org.springframework.stereotype.Component;
@@ -16,7 +17,7 @@ public class AccountMapper {
         }
 
         account.setUser(accountVo.getUserDetails());
-        account.setStatus(accountVo.getStatus());
+        account.setStatus(AccountStatus.valueOf(accountVo.getStatus()));
         account.setType(AccountType.valueOf(accountVo.getType()));
         return account;
     }
@@ -29,7 +30,7 @@ public class AccountMapper {
         }
 
         accountVo.setUserDetails(account.getUser());
-        accountVo.setStatus(account.getStatus());
+        accountVo.setStatus(account.getType().toString());
         accountVo.setType(account.getType().toString());
         return accountVo;
     }
