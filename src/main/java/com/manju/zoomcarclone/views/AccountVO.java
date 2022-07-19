@@ -6,16 +6,34 @@ import com.manju.zoomcarclone.models.UserDetails;
 
 public class AccountVO {
 
-    private UserDetails userDetails;
+    private String name;
+    private String emailId;
+    private String phone;
     private String status;
     private String accountType;
 
-    public UserDetails getUserDetails() {
-        return userDetails;
+    public String getName() {
+        return name;
     }
 
-    public void setUserDetails(UserDetails userDetails) {
-        this.userDetails = userDetails;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getStatus() {
