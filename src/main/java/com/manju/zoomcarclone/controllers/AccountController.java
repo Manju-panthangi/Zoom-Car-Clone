@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/request")
+@RequestMapping("/account")
 public class AccountController {
 
     @Autowired
@@ -24,5 +24,7 @@ public class AccountController {
         Account account = accountMapper.fromView(accountVO);
         accountService.register(account);
     }
+
+
 
 }
