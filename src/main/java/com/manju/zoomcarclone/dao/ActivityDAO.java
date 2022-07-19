@@ -1,5 +1,6 @@
 package com.manju.zoomcarclone.dao;
 
+
 import com.manju.zoomcarclone.models.Activity;
 
 public interface ActivityDAO {

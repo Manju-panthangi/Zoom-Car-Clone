@@ -1,7 +1,7 @@
 package com.manju.zoomcarclone.models;
 
 public class Account {
-    private int accountId;
+    private String accountId;
     private UserDetails userDetails;
     private AccountStatus status;
     private AccountType type;
@@ -15,11 +15,11 @@ public class Account {
         this.type = type;
     }
 
-    public int getAccountId() {
+    public String getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(int accountId) {
+    public void setAccountId(String accountId) {
         this.accountId = accountId;
     }
 
