@@ -11,15 +11,13 @@ import java.util.Map;
 public class AccountDAOImpl implements AccountDAO {
 
     private Map<String,Account> accountIdVsAccount;
-
-    public AccountDAOImpl(){
-        accountIdVsAccount = new HashMap<>();
-    }
+    private Map<String,String> userNameVsPhone;
 
     @Override
     public void register(Account account) {
         if(account!=null) {
             accountIdVsAccount.put(account.getAccountId(), account);
+            userNameVsPhone.put(account.getUser().getName(),account.getUser().getPhone());
         }
     }
 }
