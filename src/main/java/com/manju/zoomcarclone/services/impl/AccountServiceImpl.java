@@ -17,8 +17,21 @@ public class AccountServiceImpl implements AccountService{
 
     @Override
     public void register(Account account) {
-        String accountID = UUID.randomUUID().toString();
-        account.setAccountId(accountID);
-        accountManager.register(account);
+        if(validate(account)){
+            String accountID = UUID.randomUUID().toString();
+            account.setAccountId(accountID);
+            accountManager.register(account);
+        }
+        else {
+            throw new RuntimeException("INVALID PHONE NUMBER");
+        }
+    }
+
+    @Override
+    public Boolean validate(Account account) {
+        if(account.getUser().getPhone().length()!=10){
+            return false;
+        }
+        return true;
     }
 }
