@@ -19,7 +19,15 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-
+    private static final String[] AUTH_WHITELIST = {
+            "/swagger-resources/**",
+            "/swagger-ui.html",
+            "/v2/api-docs",
+            "/webjars/**",
+            "/cars/list",
+            "account/register",
+            "login"
+    };
 
     @Autowired
     private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
@@ -44,8 +52,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.csrf().disable()
                 // dont authenticate this particular request
-                .authorizeRequests().antMatchers(
-                        "/cars/list","/swagger-ui.html")
+                .authorizeRequests().antMatchers(AUTH_WHITELIST)
                 .permitAll().
                 // all other requests need to be authenticated
                         anyRequest().authenticated().and().
