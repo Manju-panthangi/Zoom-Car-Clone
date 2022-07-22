@@ -20,4 +20,15 @@ public class AccountDAOImpl implements AccountDAO {
             userNameVsPhone.put(account.getUser().getName(),account.getUser().getPhone());
         }
     }
+
+
+    public Map<String, Account> getAccountIdVsAccount() {
+        return accountIdVsAccount;
+    }
+
+    public Map<String, String> getUserNameVsPhone() {
+        return userNameVsPhone;
+    }
+
+
 }

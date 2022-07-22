@@ -16,7 +16,7 @@ public class AccountServiceImpl implements AccountService{
     private AccountManager accountManager;
 
     @Override
-    public void register(Account account) {
+    public void register(Account account) throws Exception{
         if(validate(account)){
             String accountID = UUID.randomUUID().toString();
             account.setAccountId(accountID);

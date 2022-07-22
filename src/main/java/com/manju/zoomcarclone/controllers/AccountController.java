@@ -20,11 +20,10 @@ public class AccountController {
     private AccountService accountService;
 
     @PostMapping("/register")
-    public void register(@RequestBody AccountVO accountVO){
+    public void register(@RequestBody AccountVO accountVO) throws Exception{
         Account account = accountMapper.fromView(accountVO);
         accountService.register(account);
     }
-
 
 
 }

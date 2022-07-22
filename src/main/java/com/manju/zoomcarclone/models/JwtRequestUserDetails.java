@@ -1,6 +1,9 @@
 package com.manju.zoomcarclone.models;
 
-public class JwtRequestUserDetails {
+import java.io.Serializable;
+
+public class JwtRequestUserDetails implements Serializable {
+    private static final long serialVersionUID = 5926468583005150707L;
     private String userName;
     private String phoneNumber;
 
