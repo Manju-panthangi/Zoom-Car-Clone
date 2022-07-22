@@ -1,6 +1,7 @@
 package com.manju.zoomcarclone.services.impl;
 
 import com.manju.zoomcarclone.dao.AccountDAO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -12,7 +13,8 @@ import java.util.Map;
 
 public class JwtUserDetailsService implements UserDetailsService {
 
-    AccountDAO accountDAO;
+    @Autowired
+    private AccountDAO accountDAO;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
