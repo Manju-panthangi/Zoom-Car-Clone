@@ -45,7 +45,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
                 // dont authenticate this particular request
                 .authorizeRequests().antMatchers(
-                        "/zoom-car-clone-0.0.1-SNAPSHOT/cars/list/")
+                        "/cars/list/")
                 .permitAll().
                 // all other requests need to be authenticated
                         anyRequest().authenticated().and().
